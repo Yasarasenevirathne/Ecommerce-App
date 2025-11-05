@@ -1,0 +1,80 @@
+@font-face{
+    src: url(font/Poppins-regular.ttf);
+    font-family: poppins-regular;
+}
+*{
+    font-family: poppins-regular, sans-serif;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    scroll-padding-top: 4rem;
+    scroll-behavior: smooth;
+    list-style: none;
+    text-decoration: none;
+}
+:root{
+    --main-color:#bc9667;
+    --second-color:#edeae3;
+    --text-color:#ad6161;
+    --bg-color:#fff;
+    --third-color:rgb(4 55 54/15%);
+    --forth-color:rgb(5, 29, 33);
+    --box-shadow:2px 2px 4px rgb(14 55 54/15%)
+}
+section{
+  padding: 150px 100px;
+}
+img{
+  width: 100%;
+}
+body{
+  color: rgb(15, 13, 13);
+}
+header{
+  position: fixed;
+  width: 100%;
+  top: 0;
+  right: 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 100px;
+  transition: 0.5s linear;
+  background: rgb(0, 0, 0);
+}
+header .shadow{
+  background: var(--text-color);
+  box-shadow: var(--box-shadow);
+}
+.logo{
+    width: 100px;
+}
+.navbar{
+    display: flex;
+}
+.navbar a{
+  padding: 8px 17px;
+  color: white;
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+.navbar a:hover{
+  background: rgb(196, 190, 194);
+  border-radius: 1rem;
+  transition: 0.2s all linear;
+}
+.header-icon{
+  font-size: 30px;
+  cursor: pointer;
+  z-index: 10000;
+  display: flex;
+  column-gap: 0.8rem;
+}
+.header-icon .bx{
+  color: white;
+}
+.header-icon .bx:hover{
+  color: rgb(196, 190, 194);
+}
