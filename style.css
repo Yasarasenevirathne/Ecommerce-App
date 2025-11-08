@@ -78,3 +78,39 @@ header .shadow{
 .header-icon .bx:hover{
   color: rgb(196, 190, 194);
 }
+.home{
+  margin: 30px;
+  width: 100%;
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(17rem,auto));
+  align-items: center;
+  gap: 1.5rem;
+}
+.home-text h1{
+  font-size: 3.4rem;
+  color: rgb(1, 1, 1);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.home-text p{
+  padding: 1rem;
+  font-size: 2.0rem;
+  color: rgb(181, 12, 173);
+  margin: 0.5rem 0 1.4rem;
+}
+.btn{
+  padding: 10px 40px;
+  border-radius: 1rem;
+  background: rgb(181, 12, 173);;
+  color: black;
+  font-weight: 500;
+  font-size: 30px;
+  font-style: italic;
+}
+.home-img{
+  width: 600px;
+}
+.btn:hover{
+  background: rgb(196, 190, 194);
+}
