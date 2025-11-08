@@ -114,3 +114,17 @@ header .shadow{
 .btn:hover{
   background: rgb(196, 190, 194);
 }
+.about{
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(17rem,auto));
+  gap: 1.5rem;
+  margin-top: 4rem
+}
+.about-text h2{
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+.about-text p{
+  font-size: 0.850rem;
+  margin: 0.5 rem 0 1.1rem;
+}
