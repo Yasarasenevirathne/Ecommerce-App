@@ -235,3 +235,58 @@ header .shadow{
   margin-bottom: 10px;
   color: black;
 }
+.social{
+  display: flex;
+  align-items: center;
+  column-gap: 0.5rem;
+}
+.social a.bx{
+  font: 24px;
+  color: rgb(2, 2, 2);
+  padding: 10px;
+  background: rgb(180, 178, 178);
+  border-radius: 0.2rem;
+}
+.social a.bx:hover{
+  background: wheat;
+  color: rgb(186, 182, 182);
+}
+.social a{
+  font-size: 20px;
+  color:black;
+  padding: 10px;
+  background: rgb(189, 189, 185)
+  order-radius: 0.2rem;
+}
+.social a :hover{
+  background: var(--main-color);
+  color: var(--bg-color);
+}
+.footer-box h3{
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.footer-box li a{
+  color:rgb(75, 75, 233);
+}
+.footer-box li a:hover{
+  color: gray;
+}
+.contact{
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.5rem;
+}
+.contact span {
+  display: flex;
+  align-items: center;
+}
+.contact i{
+  font-size: 15px;
+  margin-right: 1rem;
+}
+.copyright{
+  padding: 20px;
+  text-align: center;
+  background: var(--second-color);
+}
