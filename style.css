@@ -188,3 +188,39 @@ header .shadow{
   font-weight: 500;
   font-size: 1rem;
 }
+.customers-container{
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(280px,auto));
+  gap: 1.5rem;
+  margin-top: 3rem;
+}
+.customers{
+  margin-top: 1rem;
+}
+.customers-container .box{
+  padding: 20px;
+  box-shadow: rgb(188, 183, 183);
+  border-radius: 0.5rem;
+  text-align: center;
+}
+.stars .bx{
+  color: white;
+}
+.customers-container .box p{
+  font-size: 0.900;
+}
+.customers-container .box h2{
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin: 0.5rem 0 0.5rem;
+}
+.customers-container .box img{
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.customers-container .box:hover{
+  background: rgb(170, 164, 164);
+  transition: 0.2s all linear;
+}
