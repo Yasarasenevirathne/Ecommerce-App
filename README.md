@@ -1,6 +1,6 @@
 🛍️ BROGHTEN FASHION – E-Commerce Website
 
-This is my first web development project, created using HTML and CSS.
+This is my first web development project, created using HTML, CSS and JS.
 
 Project Overview
 
@@ -26,7 +26,7 @@ Technology Used:
 
 HTML
 CSS
-
+JS
 
 
 Purpose:
