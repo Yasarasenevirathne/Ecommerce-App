@@ -29,6 +29,7 @@ img{
 }
 body{
   color: rgb(15, 13, 13);
+  padding-top: 80px;
 }
 header{
   position: fixed;
@@ -109,7 +110,9 @@ header .shadow{
   font-style: italic;
 }
 .home-img{
-  width: 600px;
+  width: 100%;
+  max-width: 600px;
+  height: auto;
 }
 .btn:hover{
   background: rgb(196, 190, 194);
@@ -255,8 +258,8 @@ header .shadow{
   font-size: 20px;
   color:black;
   padding: 10px;
-  background: rgb(189, 189, 185)
-  order-radius: 0.2rem;
+  background: rgb(189, 189, 185);
+  border-radius: 0.2rem;
 }
 .social a :hover{
   background: var(--main-color);
@@ -342,4 +345,333 @@ header .shadow{
 
 .login-btn:hover {
   background-color: #0056b3;
+}
+
+#menu-icon {
+    font-size: 3.6rem;
+    color: var(--bg-color);
+    cursor: pointer;
+    display: none;
+    z-index: 10001;
+}
+
+.navbar.active {
+    display: flex !important;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    width: 100%;
+    background: rgb(0, 0, 0);
+    flex-direction: column;
+    padding: 20px;
+    gap: 15px;
+    z-index: 999;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+  section {
+    padding: 100px 60px;
+  }
+  header {
+    padding: 15px 60px;
+  }
+  body {
+    padding-top: 70px;
+  }
+  .home-text h1 {
+    font-size: 2.8rem;
+  }
+  .home-text p {
+    font-size: 1.5rem;
+  }
+  .btn {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 1024px) {
+  section {
+    padding: 80px 40px;
+  }
+  header {
+    padding: 12px 40px;
+  }
+  body {
+    padding-top: 70px;
+  }
+  .logo {
+    width: 90px;
+  }
+  .navbar {
+    gap: 0.5rem;
+  }
+  .navbar a {
+    font-size: 0.9rem;
+    padding: 6px 12px;
+  }
+  .home-text h1 {
+    font-size: 2.4rem;
+  }
+  .home-text p {
+    font-size: 1.2rem;
+  }
+  .home {
+    margin: 20px;
+    min-height: auto;
+  }
+  .btn {
+    font-size: 20px;
+  }
+  .product-container {
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  }
+  .product-container img {
+    height: 220px;
+  }
+  .login-container {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 120px;
+  }
+}
+
+@media (max-width: 768px) {
+  section {
+    padding: 60px 20px;
+  }
+  header {
+    padding: 10px 15px;
+  }
+  body {
+    padding-top: 65px;
+  }
+  .logo {
+    width: 80px;
+  }
+  #menu-icon {
+    display: block;
+    font-size: 2rem;
+  }
+  .navbar {
+    display: none;
+    flex-direction: column;
+    gap: 0;
+  }
+  .navbar.active {
+    display: flex !important;
+  }
+  .navbar a {
+    font-size: 0.9rem;
+    padding: 12px 15px;
+    display: block;
+    border-bottom: 1px solid rgb(100, 100, 100);
+    color: white;
+  }
+  .navbar a:hover {
+    background: rgb(181, 12, 173);
+  }
+  .header-icon {
+    font-size: 24px;
+  }
+  .home {
+    margin: 10px;
+    grid-template-columns: 1fr;
+    min-height: auto;
+  }
+  .home-text h1 {
+    font-size: 1.8rem;
+  }
+  .home-text p {
+    font-size: 0.95rem;
+    padding: 0.5rem;
+  }
+  .home-img {
+    max-width: 400px;
+  }
+  .btn {
+    font-size: 16px;
+    padding: 8px 25px;
+  }
+  .about {
+    grid-template-columns: 1fr;
+  }
+  .product-container {
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  }
+  .product-container img {
+    height: 200px;
+    padding: 15px;
+  }
+  .product-container .box h3 {
+    font-size: 0.9rem;
+  }
+  .product-container .box .content span {
+    font-size: 0.85rem;
+    padding: 0 0.5rem;
+  }
+  .customers-container {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+  .footer {
+    grid-template-columns: 1fr;
+  }
+  .login-container {
+    width: 90%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 80px;
+  }
+}
+
+@media (max-width: 480px) {
+  section {
+    padding: 40px 12px;
+  }
+  header {
+    padding: 8px 10px;
+  }
+  body {
+    padding-top: 60px;
+  }
+  .logo {
+    width: 70px;
+  }
+  #menu-icon {
+    display: block;
+    font-size: 1.8rem;
+  }
+  .navbar {
+    display: none;
+    flex-direction: column;
+    gap: 0;
+  }
+  .navbar.active {
+    display: flex !important;
+  }
+  .navbar a {
+    font-size: 0.85rem;
+    padding: 10px 12px;
+    display: block;
+    border-bottom: 1px solid rgb(100, 100, 100);
+    color: white;
+  }
+  .navbar a:hover {
+    background: rgb(181, 12, 173);
+  }
+  .header-icon {
+    font-size: 20px;
+  }
+  .home {
+    margin: 5px;
+    grid-template-columns: 1fr;
+  }
+  .home-text h1 {
+    font-size: 1.4rem;
+  }
+  .home-text p {
+    font-size: 0.85rem;
+    padding: 0.3rem;
+  }
+  .home-img {
+    max-width: 280px;
+  }
+  .btn {
+    font-size: 13px;
+    padding: 6px 15px;
+  }
+  .product-container {
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 1rem;
+  }
+  .product-container img {
+    height: 180px;
+    padding: 10px;
+  }
+  .product-container .box h3 {
+    font-size: 0.85rem;
+  }
+  .product-container .box .content {
+    flex-direction: column;
+    gap: 5px;
+  }
+  .product-container .box .content span {
+    font-size: 0.8rem;
+    padding: 0 0.4rem;
+  }
+  .customers-container {
+    grid-template-columns: 1fr;
+  }
+  .customers-container .box {
+    padding: 12px;
+  }
+  .footer {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  .copyright p {
+    font-size: 0.85rem;
+  }
+  .heading h2 {
+    font-size: 1.1rem;
+  }
+  .login-container {
+    width: 95%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 60px;
+  }
+}
+
+@media (max-width: 360px) {
+  section {
+    padding: 30px 8px;
+  }
+  header {
+    padding: 6px 8px;
+  }
+  body {
+    padding-top: 55px;
+  }
+  .logo {
+    width: 60px;
+  }
+  #menu-icon {
+    display: block;
+    font-size: 1.6rem;
+  }
+  .navbar {
+    display: none;
+    flex-direction: column;
+    gap: 0;
+  }
+  .navbar.active {
+    display: flex !important;
+  }
+  .navbar a {
+    font-size: 0.8rem;
+    padding: 10px 12px;
+    display: block;
+    border-bottom: 1px solid rgb(100, 100, 100);
+    color: white;
+  }
+  .navbar a:hover {
+    background: rgb(181, 12, 173);
+  }
+  .home-text h1 {
+    font-size: 1.1rem;
+  }
+  .home-text p {
+    font-size: 0.75rem;
+  }
+  .btn {
+    font-size: 11px;
+    padding: 4px 12px;
+  }
+  .product-container {
+    grid-template-columns: 1fr;
+  }
 }
